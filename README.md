@@ -1,107 +1,108 @@
-# Inventory_Management_System
-# Inventory Management System
+# 🛍️ Inventory Management System  
 
-An **Inventory Management System** designed as a **GUI desktop application** using ***Java*** and ***MySQL*** as the database.
+An **Inventory Management System** designed as a **desktop application** using ***Java*** and ***MySQL***.  
 
-The GUI is built with **Swing**, and database connectivity is handled using the **JDBC API**.
+This system helps small to mid-sized businesses efficiently manage their inventory, sales, and transactions.  
 
-## Overview
-This application helps small to mid-sized businesses manage their:
-- Products
-- Customers
-- Suppliers
-- Users
-- Transactions
+## 🚀 Overview  
+This application allows businesses to keep track of:  
+✅ Products  
+✅ Customers  
+✅ Suppliers  
+✅ Users  
+✅ Transactions  
 
-## Features
-- Manage inventory and stock of all products.
-- Track sales and purchase transactions efficiently.
-- Supports two user roles:
-  1. **Administrator** – Full access to all functionalities, including user management.
-  2. **Employee** – Limited access, primarily for handling inventory and transactions.
-- Automatic stock updates after each transaction.
-- Search functionality for quick access to records.
-- Simplified sales process—users only need to enter the product code.
-- Logs user activity, including login and logout times.
+## ✨ Features  
+- 📦 **Inventory & Stock Management** – Easily track available stock and update product details.  
+- 💰 **Sales & Purchases** – Manage transactions seamlessly with automatic stock updates.  
+- 👥 **User Roles**:  
+  - **Administrator** – Full access, including user management.  
+  - **Employee** – Restricted access, mainly for handling inventory and transactions.  
+- 🔍 **Search Functionality** – Quickly find records in all sections.  
+- ⚡ **Simplified Sales Process** – Just enter the product code, and all relevant details are fetched automatically.  
+- 🕒 **User Logs** – Track login/logout times for security and monitoring.  
 
-## Installation & Setup
-### Prerequisites
-- JDK or JRE version **16** or higher.
+## 🛠️ Installation & Setup  
+### Prerequisites  
+- **Java** (JDK or JRE version **16** or higher).  
 
-### Steps to Run
-1. **Download and extract the ZIP folder**: [InventoryManagement.zip](InventoryManagement.zip)
-2. **Setup the database**:
-   - Download the SQL dump file: [SQL/InventoryDB.sql](SQL/InventoryDB.sql)
-   - Import the dump file using MySQL Workbench to create the required schema and tables.
-3. **Run the application**:
-   - Execute the JAR file (`InventoryManagement.jar`) from the extracted folder.
-4. **Database Connection**
-   - Default credentials:
-     - **Username:** root
-     - **Password:** root
-   - To update database credentials:
-     1. Navigate to the `lib` folder.
-     2. Open `DBCredentials.xml`.
-     3. Modify the `<entry key="username">` and `<entry key="password">` values.
+### Steps to Run  
+1️⃣ **Download & Extract** the ZIP file: [InventoryManagement.zip](InventoryManagement.zip)  
+2️⃣ **Setup the Database**:  
+   - Download the SQL dump file: [SQL/InventoryDB.sql](SQL/InventoryDB.sql)  
+   - Import it using **MySQL Workbench** to create the required database schema.  
+3️⃣ **Run the Application**:  
+   - Execute the `InventoryManagement.jar` file from the extracted folder.  
+4️⃣ **Database Connection**:  
+   - Default credentials:  
+     - **Username:** root  
+     - **Password:** root  
+   - To update database credentials:  
+     1. Open the `lib` folder.  
+     2. Edit the `DBCredentials.xml` file.  
+     3. Change the username and password inside:  
      ```xml
      <properties>
        <comment>Database Credentials</comment>
-       <entry key="username">root</entry>
-       <entry key="password">root</entry>
+       <entry key="username">your_username</entry>
+       <entry key="password">your_password</entry>
      </properties>
      ```
-5. **Login Credentials**
-   - **Username:** root
-   - **Password:** root
+5️⃣ **Login Credentials**:  
+   - **Username:** root  
+   - **Password:** root  
 
-## Application Screenshots
-### Login Page
-![Login Page](screenshots/login.png)
+## 🖥️ Application Screenshots  
+### 🔐 Login Page  
+![Login Page](screenshots/login.png)  
 
-### Dashboard
-![Dashboard](screenshots/welcome.png)
+### 📊 Dashboard  
+![Dashboard](screenshots/welcome.png)  
 
-### Inventory Management
-- **Products**
-  ![Products](screenshots/products.png)
-- **Stock Availability**
-  ![Stock](screenshots/stock.png)
-- **Suppliers**
-  ![Suppliers](screenshots/suppliers.png)
-- **Customers**
-  ![Customers](screenshots/customers.png)
+### 📦 Inventory Management  
+- **Products**  
+  ![Products](screenshots/products.png)  
+- **Stock Availability**  
+  ![Stock](screenshots/stock.png)  
+- **Suppliers**  
+  ![Suppliers](screenshots/suppliers.png)  
+- **Customers**  
+  ![Customers](screenshots/customers.png)  
 
-### Transactions
-- **Sales**
-  ![Sales](screenshots/sales.png)
-- **Purchases**
-  ![Purchases](screenshots/purchase.png)
+### 💳 Transactions  
+- **Sales**  
+  ![Sales](screenshots/sales.png)  
+- **Purchases**  
+  ![Purchases](screenshots/purchase.png)  
 
-### User Management (Admin Only)
-- **Users**
-  ![Users](screenshots/users.png)
-- **User Logs**
-  ![Logs](screenshots/logs.png)
+### 🔑 User Management (Admin Only)  
+- **Users**  
+  ![Users](screenshots/users.png)  
+- **User Logs**  
+  ![Logs](screenshots/logs.png)  
 
-## Technologies Used
-- **Java** (JDK 16)
-- **JDBC API** (Database connectivity)
-- **MySQL** (Database)
-- **JetBrains IntelliJ IDE** / **Apache NetBeans IDE** (Development)
-- **MySQL Workbench** (Database management)
+## 🏗️ Technologies Used  
+🖥️ **Java** (JDK 16)  
+🔗 **JDBC API** (for database connectivity)  
+💾 **MySQL** (Database)  
+📌 **IntelliJ IDEA / NetBeans** (Development)  
+🛢️ **MySQL Workbench** (Database Management)  
 
-## Database Schema (ER Diagram)
-![ER Diagram](screenshots/ERDiagram.png)
+## 🗂️ Database Schema (ER Diagram)  
+![ER Diagram](screenshots/ERDiagram.png)  
 
-## Code Structure
-The source code is structured into four main packages:
-1. **Data Access Object (DAO)** – Handles direct database interactions.
-2. **Data Transfer Object (DTO)** – Transfers data between layers.
-3. **Database** – Manages database connections and authentication.
-4. **User Interface (UI)** – Contains all GUI components.
+## 📁 Code Structure  
+The project is structured into four key modules:  
+1️⃣ **Data Access Object (DAO)** – Handles direct database interactions.  
+2️⃣ **Data Transfer Object (DTO)** – Transfers data between different parts of the system.  
+3️⃣ **Database** – Manages database connections and authentication.  
+4️⃣ **User Interface (UI)** – Contains all screens and user interactions.  
 
-[Click here](src/com/inventory/) to view the source code.
+[📌 Click here to view the source code](src/com/inventory/)  
 
-## Future Enhancements
-This project is under active development, with more features and improvements planned in upcoming versions.
+## 🚧 Future Enhancements  
+⚙️ **Adding analytics and reporting features** 📊  
+📱 **Building a mobile-friendly version** 📱  
+🌍 **Cloud database integration** ☁️  
 
+This project is actively being improved with new features! 🎯🚀
